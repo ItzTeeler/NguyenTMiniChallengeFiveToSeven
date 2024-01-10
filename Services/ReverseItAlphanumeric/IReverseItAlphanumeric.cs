@@ -2,5 +2,5 @@ namespace NguyenTMiniChallengeFiveToSeven.Services.ReverseItAlphanumeric;
 
     public interface IReverseItAlphanumeric
     {
-        public string ReverseItAlphanumeric (string number1);
+        public string ReverseItAlphanumeric (string number1orletter);
     }

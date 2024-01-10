@@ -14,9 +14,9 @@ public class ReverseItAlphanumericController : ControllerBase
         _reverseItAlphanumeric = reverseItAlphanumeric;
     }
     [HttpGet]
-    [Route("ReverseItAlphanumeric/{number1}")]
-    public string ReverseItAlphanumeric(string number1)
+    [Route("ReverseItAlphanumeric/{number1orletter}")]
+    public string ReverseItAlphanumeric(string number1orletter)
     {
-        return _reverseItAlphanumeric.ReverseItAlphanumeric(number1);
+        return _reverseItAlphanumeric.ReverseItAlphanumeric(number1orletter);
     }
 }
