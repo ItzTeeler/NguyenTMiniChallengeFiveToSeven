@@ -13,7 +13,7 @@ public class ReverseItNumbersOnlyService : IReverseItNumbersOnlyService
             {
                 reverse += number1[i];
             }
-            return reverse;
+            return $"You entered {number1}, reversed is {reverse}";
         }
         else
         {

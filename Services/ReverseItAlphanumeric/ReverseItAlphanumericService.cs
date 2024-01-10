@@ -9,6 +9,6 @@ public class ReverseItAlphanumericService : IReverseItAlphanumericService
         {
             reverse += number1orletter[i];
         }
-        return reverse;
+        return $"You entered {number1orletter}, reversed is {reverse}";
     }
 }
