@@ -1,6 +1,6 @@
 namespace NguyenTMiniChallengeFiveToSeven.Services.ReverseItNumbersOnly;
 
-    public interface IReverseItNumbersOnly
+    public interface IReverseItNumbersOnlyService
     {
         public string ReverseItNumbersOnly (string number1);
     }

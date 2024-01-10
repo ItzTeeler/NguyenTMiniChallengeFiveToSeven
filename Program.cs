@@ -13,8 +13,8 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IMadLibService, MadLibService>();
 builder.Services.AddScoped<IOddOrEvenService, OddOrEvenService>();
-builder.Services.AddScoped<IReverseItAlphanumeric, ReverseItAlphanumeric>();
-builder.Services.AddScoped<IReverseItNumbersOnly, ReverseItNumbersOnly>();
+builder.Services.AddScoped<IReverseItAlphanumericService, ReverseItAlphanumericService>();
+builder.Services.AddScoped<IReverseItNumbersOnlyService, ReverseItNumbersOnlyService>();
 
 var app = builder.Build();
 

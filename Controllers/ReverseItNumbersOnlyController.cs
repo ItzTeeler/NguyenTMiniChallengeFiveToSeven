@@ -6,15 +6,15 @@ namespace NguyenTMiniChallengeFiveToSeven.Controllers;
 [Route("[controller]")]
     public class ReverseItNumbersOnlyController : ControllerBase
     {
-    private readonly IReverseItNumbersOnly _reverseItNumbersOnly;
+    private readonly IReverseItNumbersOnlyService _reverseItNumbersOnlyService;
 
-    public ReverseItNumbersOnlyController(IReverseItNumbersOnly reverseItNumbersOnly)
+    public ReverseItNumbersOnlyController(IReverseItNumbersOnlyService reverseItNumbersOnlyService)
         {
-        _reverseItNumbersOnly = reverseItNumbersOnly;
+        _reverseItNumbersOnlyService = reverseItNumbersOnlyService;
     }
         [HttpGet]
         [Route("ReverseItNumbersOnly/{number1}")]
         public string ReverseItNumbersOnly (string number1){
-            return _reverseItNumbersOnly.ReverseItNumbersOnly(number1);
+            return _reverseItNumbersOnlyService.ReverseItNumbersOnly(number1);
         }
     }

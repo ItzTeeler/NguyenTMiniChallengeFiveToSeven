@@ -1,8 +1,8 @@
 namespace NguyenTMiniChallengeFiveToSeven.Services.ReverseItNumbersOnly;
 
-public class ReverseItNumbersOnly : IReverseItNumbersOnly
+public class ReverseItNumbersOnlyService : IReverseItNumbersOnlyService
 {
-    string IReverseItNumbersOnly.ReverseItNumbersOnly(string number1)
+    public string ReverseItNumbersOnly(string number1)
     {
         double num1 = 0;
         bool isTrue1 = Double.TryParse(number1, out num1);
